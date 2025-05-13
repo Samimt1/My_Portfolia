@@ -85,9 +85,9 @@ const services = [
 
 const dataportfolio = [
   {
-    img: "https://picsum.photos/400/?grayscale",
-    description: "cross-word",
-    link: "https://github.com/Samimt1/cross-word.git",
+    img: "/images/diabetes prediction.jpg",
+    description: "ML-Predecting-Diabetes",
+    link: "https://github.com/Samimt1/ML-Predecting-Diabetes",
   },
   {
     img: "https://picsum.photos/400/800/?grayscale",

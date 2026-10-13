@@ -11,7 +11,7 @@ const introdata = {
     first: "I love coding",
     second: "I code cool websites",
     third: "I develop mobile apps",
-    fourth: "I Software tester",
+    fourth: "I Softwar tester",
   },
   description:
     "I am a software engineer with skills in full-stack web development. I have experience in front-end technologies such as HTML, CSS, and JavaScript, react along with frameworks like next.js. On the back end, I work with nest and Node.js. Additionally, I have expertise in mobile app development using Android Studio and Flutter.",

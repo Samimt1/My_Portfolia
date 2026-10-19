@@ -96,19 +96,19 @@ const dataportfolio = [
     link: "https://t.me/GreenPill_LMS_bot",
   },
   {
-    img: "https://picsum.photos/400/?grayscale",
+    img: "https://picsum.photos/400/?grayscal",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "Developed a Smart Mobility Hub for digital bus ticketing, EV charging, and smart parking",
+    link: "https://github.com/sami855-ux/HabeshaGo",
   },
   {
     img: "https://picsum.photos/400/600/?grayscale",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "PySpark-based ETL pipeline to extract, transform, and load large datasets",
+    link: "https://github.com/sami855-ux/pyspark-ETL",
   },
   {
-    img: "https://picsum.photos/400/300/?grayscale",
+    img: "https://github.com/sami855-ux/HabeshaGo",
     description:
       "The wisdom of life consists in the elimination of non-essentials.",
     link: "#",

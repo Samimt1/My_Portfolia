@@ -129,7 +129,7 @@ const dataportfolio = [
   {
     img: "https://picsum.photos/400/300/?grayscale",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
+      "...",
     link: "#",
   },
   {
@@ -141,20 +141,20 @@ const dataportfolio = [
   {
     img: "https://picsum.photos/400/550/?grayscale",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "cross word",
+    link: "https://github.com/Samimt1/cross-word",
   },
   {
     img: "https://picsum.photos/400/?grayscale",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "Crypto-vs-React",
+    link: "https://github.com/Samimt1/Crypto-vs-React",
   },
   {
     img: "https://picsum.photos/400/700/?grayscale",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "pizza-menu",
+    link: "https://github.com/Samimt1/pizza-menu",
   },
 ];
 

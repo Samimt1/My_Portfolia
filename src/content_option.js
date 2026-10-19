@@ -108,10 +108,10 @@ const dataportfolio = [
     link: "https://github.com/sami855-ux/pyspark-ETL",
   },
   {
-    img: "https://github.com/sami855-ux/HabeshaGo",
+    img: "https://picsum.photos/400/700/?grayscale",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "Developed a Smart Mobility Hub for digital bus ticketing, EV charging, and smart parking",
+    link: "https://github.com/sami855-ux/HabeshaGo",
   },
   {
     img: "https://picsum.photos/400/700/?grayscale",
@@ -135,14 +135,14 @@ const dataportfolio = [
   {
     img: "https://picsum.photos/400/?grayscale",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "Developed a Smart Mobility Hub for digital bus ticketing, EV charging, and smart parking",
+    link: "https://github.com/sami855-ux/HabeshaGo",
   },
   {
     img: "https://picsum.photos/400/550/?grayscale",
     description:
-      "cross word",
-    link: "https://github.com/Samimt1/cross-word",
+      "pyspark-ETL",
+    link: "https://github.com/sami855-ux/pyspark-ETL",
   },
   {
     img: "https://picsum.photos/400/?grayscale",

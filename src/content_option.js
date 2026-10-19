@@ -116,15 +116,15 @@ const dataportfolio = [
   {
     img: "https://picsum.photos/400/700/?grayscale",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "An ETL (Extract, Transform, Load) pipeline built with Python, Pandas, and SQLAlchemy, designed to process AIS",
+    link: "https://github.com/Samimt1/Big-data-",
   },
 
   {
     img: "https://picsum.photos/400/600/?grayscale",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "travel-list",
+    link: "https://github.com/Samimt1/travel-list",
   },
   {
     img: "https://picsum.photos/400/300/?grayscale",

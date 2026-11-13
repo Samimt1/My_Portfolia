@@ -1,72 +1,31 @@
-import React, { useState } from "react";
-import "./style.css";
-import { VscGrabber, VscClose } from "react-icons/vsc";
-import { Link } from "react-router-dom";
-import { logotext ,socialprofils } from "../content_option";
+import React, { useState, useEffect } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { FiMenu, FiX, FiArrowUpRight } from "react-icons/fi";
+import { logotext, socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
+import "./style.css";
+
+const links = [["/", "Home"], ["/about", "About"], ["/portfolio", "Projects"], ["/contact", "Contact"]];
 
 const Headermain = () => {
-  const [isActive, setActive] = useState("false");
-
-  const handleToggle = () => {
-    setActive(!isActive);
-    document.body.classList.toggle("ovhidden");
-  };
-
-  return (
-    <>
-      <header className="fixed-top site__header">
-        <div className="d-flex align-items-center justify-content-between">
-          <Link  className="navbar-brand nav_ac" to="/">
-            {logotext}
-          </Link>
-          <div className="d-flex align-items-center">
-          <Themetoggle />
-          <button className="menu__button  nav_ac" onClick={handleToggle}>
-            {!isActive ? <VscClose /> : <VscGrabber />}
-          </button>
-          
-          </div>
-        </div>
-
-        <div className={`site__navigation ${!isActive ? "menu__opend" : ""}`}>
-          <div className="bg__menu h-100">
-            <div className="menu__wrapper">
-              <div className="menu__container p-3">
-                <ul className="the_menu">
-                  <li className="menu_item ">
-                  <Link  onClick={handleToggle} to="/" className="my-3">Home</Link>
-                  </li>
-                  <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Portfolio</Link>
-                  </li>
-                  <li className="menu_item">
-                  <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
-                  </li>
-                  <li className="menu_item">
-                  <Link onClick={handleToggle} to="/contact" className="my-3"> Contact</Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
-            <div className="d-flex">
-            <a href={socialprofils.facebook}>Facebook</a>
-            <a href={socialprofils.github}>Github</a>
-            <a href={socialprofils.twitter}>Twitter</a>
-            </div>
-            <p className="copyright m-0">copyright __ {logotext}</p>
-          </div>
-        </div>
-      </header>
-      <div className="br-top"></div>
-      <div className="br-bottom"></div>
-      <div className="br-left"></div>
-      <div className="br-right"></div>
-      
-    </>
-  );
+  const [open, setOpen] = useState(false);
+  const { pathname } = useLocation();
+  useEffect(() => { setOpen(false); }, [pathname]);
+  useEffect(() => {
+    const closeOnEscape = (event) => { if (event.key === "Escape") setOpen(false); };
+    document.addEventListener("keydown", closeOnEscape);
+    return () => document.removeEventListener("keydown", closeOnEscape);
+  }, []);
+  return <header className="modern-header">
+    <div className="modern-header-inner">
+      <Link className="modern-logo" to="/" onClick={() => setOpen(false)}>{logotext}<span>.</span><span className="logo-sub">dev</span></Link>
+      <nav className={open ? "modern-nav is-open" : "modern-nav"} aria-label="Main navigation">
+        {links.map(([to, label]) => <NavLink key={to} to={to} end={to === "/"} onClick={() => setOpen(false)} className={({ isActive }) => isActive ? "nav-link-item active" : "nav-link-item"}>{label}</NavLink>)}
+        <a className="mobile-github" href={socialprofils.github} target="_blank" rel="noopener noreferrer">GitHub <FiArrowUpRight /></a>
+      </nav>
+      <div className="modern-header-actions"><Themetoggle /><a className="header-cta" href={socialprofils.github} target="_blank" rel="noopener noreferrer">GitHub <FiArrowUpRight /></a><button type="button" className="mobile-menu-toggle" aria-expanded={open} aria-controls="mobile-navigation" aria-label={open ? "Close navigation" : "Open navigation"} onClick={() => setOpen(v => !v)}>{open ? <FiX /> : <FiMenu />}</button></div>
+    </div>
+    {open && <button type="button" className="nav-backdrop" aria-label="Close navigation" onClick={() => setOpen(false)} />}
+  </header>;
 };
-
 export default Headermain;

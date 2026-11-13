@@ -1,189 +1,34 @@
 const logotext = "SAMI";
-const meta = {
-  title: "Samuel Esubalew",
-  description:
-    "I’m Sami Software Engineer_ Full stack devloper,currently working in Ethiopia",
-};
-
+const meta = { title: "Samuel Esubalew", description: "Samuel Esubalew is a full-stack software developer experienced with React, Next.js, Node.js, Python and modern web applications." };
 const introdata = {
-  title: "I’m Samuel Esubalew",
-  animated: {
-    first: "I love coding",
-    second: "I code cool websites",
-    third: "I develop mobile apps",
-    fourth: "I Softwar tester",
-  },
-  description:
-    "I am a software engineer with skills in full-stack web development. I have experience in front-end technologies such as HTML, CSS, and JavaScript, react along with frameworks like next.js. On the back end, I work with nest and Node.js. Additionally, I have expertise in mobile app development using Android Studio and Flutter.",
-  your_img_url:
-    "https://as2.ftcdn.net/v2/jpg/06/97/17/65/1000_F_697176551_pUMjAjjjMeIETnJDU7fictOdxQTvXDFf.jpg",
+  title: "I'm Samuel Esubalew",
+  animated: { first: "I build modern web apps", second: "I design elegant interfaces", third: "I create scalable backend APIs", fourth: "I enjoy solving problems" },
+  description: "Software Engineering graduate from Debre Birhan University and Full Stack Developer with two years of hands-on experience building web products.",
+  your_img_url: ""
 };
-
-const dataabout = {
-  title: "About my self",
-  aboutme:
-    "I design and develop innovative software solutions that meet user needs and enhance functionality. My expertise spans various programming languages and frameworks, enabling me to create efficient, scalable applications. I am committed to continuous learning and collaboration, ensuring that I stay updated with industry trends and best practices.",
-};
+const dataabout = { title: "Developer. Builder. Problem solver.", aboutme: "I'm a Software Engineering graduate from Debre Birhan University with two years of experience building responsive web apps, reliable APIs, and practical digital solutions. I enjoy working across the stack with React, Next.js, Node.js, PostgreSQL, Java, and Python." };
 const worktimeline = [
-  {
-    jobtitle: "Website Develoment",
-    where: "Addis Ababa, Bole",
-    date: "Monday - Wednesday",
-  },
-  {
-    jobtitle: " Mobile App Development",
-    where: "Addis Ababa, Mexico",
-    date: "Thursday - Friday",
-  },
-  {
-    jobtitle: "Software testing",
-    where: "Addis Abebe, Megenagna",
-    date: "Saturday",
-  },
+  { jobtitle: "Full Stack Developer", where: "Efuye Gela Tech", date: "Professional experience" },
+  { jobtitle: "Software Engineering", where: "Debre Birhan University", date: "Graduate" }
 ];
-
 const skills = [
-  {
-    name: "Python",
-    value: 90,
-  },
-  {
-    name: "Java",
-    value: 85,
-  },
-  {
-    name: "Javascript",
-    value: 70,
-  },
-  {
-    name: "React",
-    value: 70,
-  },
-  {
-    name: "C++",
-    value: 85,
-  },
+  { name: "React & Next.js", value: 90 }, { name: "JavaScript", value: 90 }, { name: "Node.js & Express", value: 85 }, { name: "Python & FastAPI", value: 80 }, { name: "PostgreSQL", value: 80 }, { name: "Tailwind CSS", value: 90 }
 ];
-
 const services = [
-  {
-    title: "Website Development",
-    description:
-      "I have a strong foundation in HTML, CSS, and JavaScript, which I utilize to create engaging and user-friendly web applications. My expertise in frameworks like React and Vue enables me to develop dynamic, component-driven interfaces that enhance user experience. I have successfully worked on various projects, including e-commerce websites and hotel booking platforms, where I implemented features such as responsive design, seamless navigation, and interactive product displays. By leveraging the capabilities of these frameworks, I am able to deliver high-performance applications that not only meet the needs of businesses but also provide an intuitive experience for users.",
-  },
-  {
-    title: "Mobile App Development",
-    description:
-      "I specialize in mobile app development using frameworks like React Native and Flutter, allowing me to create cross-platform applications with seamless performance. My experience includes building e-commerce and hotel booking apps, where I focus on delivering intuitive user interfaces and efficient functionality. By leveraging these frameworks, I ensure that users have a smooth and engaging experience, regardless of the device they use.",
-  },
-  {
-    title: "Software Testing",
-    description:
-      "I am dedicated to ensuring the quality and reliability of applications through meticulous testing processes. I utilize various testing methodologies, including manual and automated testing, to identify bugs and ensure functionality meets specifications. My attention to detail and analytical skills enable me to provide valuable feedback to development teams, contributing to the overall improvement of software products. I am passionate about delivering high-quality user experiences and continuously improving testing practices.",
-  },
+  { title: "Full-Stack Web Development", description: "From accessible, mobile-friendly interfaces to robust API development and database integration, I create full-stack solutions that are easy to use and maintain." },
+  { title: "Backend & API Engineering", description: "I build REST APIs, authentication systems, and reliable integrations with Node.js, Express, Python, and PostgreSQL." },
+  { title: "AI & Data Projects", description: "I explore machine learning, intelligent resume analysis, data pipelines, and practical automation using Python." }
 ];
-
 const dataportfolio = [
-  {
-    img: "/images/diabetes prediction.jpg",
-    description: "ML-Predecting-Diabetes",
-    link: "https://github.com/Samimt1/ML-Predecting-Diabetes",
-  },
-  {
-    img: "https://picsum.photos/400/800/?grayscale",
-    description:
-      "GreenPill_LMS",
-    link: "https://t.me/GreenPill_LMS_bot",
-  },
-  {
-    img: "https://picsum.photos/400/?grayscal",
-    description:
-      "Developed a Smart Mobility Hub for digital bus ticketing, EV charging, and smart parking",
-    link: "https://github.com/sami855-ux/HabeshaGo",
-  },
-  {
-    img: "https://picsum.photos/400/600/?grayscale",
-    description:
-      "PySpark-based ETL pipeline to extract, transform, and load large datasets",
-    link: "https://github.com/sami855-ux/pyspark-ETL",
-  },
-  {
-    img: "https://picsum.photos/400/700/?grayscale",
-    description:
-      "Developed a Smart Mobility Hub for digital bus ticketing, EV charging, and smart parking",
-    link: "https://github.com/sami855-ux/HabeshaGo",
-  },
-  {
-    img: "https://picsum.photos/400/700/?grayscale",
-    description:
-      "An ETL (Extract, Transform, Load) pipeline built with Python, Pandas, and SQLAlchemy, designed to process AIS",
-    link: "https://github.com/Samimt1/Big-data-",
-  },
-
-  {
-    img: "https://picsum.photos/400/600/?grayscale",
-    description:
-      "travel-list",
-    link: "https://github.com/Samimt1/travel-list",
-  },
-  {
-    img: "https://picsum.photos/400/300/?grayscale",
-    description:
-      "...",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/?grayscale",
-    description:
-      "Developed a Smart Mobility Hub for digital bus ticketing, EV charging, and smart parking",
-    link: "https://github.com/sami855-ux/HabeshaGo",
-  },
-  {
-    img: "https://picsum.photos/400/550/?grayscale",
-    description:
-      "pyspark-ETL",
-    link: "https://github.com/sami855-ux/pyspark-ETL",
-  },
-  {
-    img: "https://picsum.photos/400/?grayscale",
-    description:
-      "Crypto-vs-React",
-    link: "https://github.com/Samimt1/Crypto-vs-React",
-  },
-  {
-    img: "https://picsum.photos/400/700/?grayscale",
-    description:
-      "pizza-menu",
-    link: "https://github.com/Samimt1/pizza-menu",
-  },
+  { title: "AI Resume Analyzer & Job Matcher", category: "AI & ML", visual: "ai", symbol: "✳", description: "Resume parsing and intelligent job matching powered by a Next.js frontend and Python FastAPI backend.", stack: ["Next.js", "FastAPI", "Python", "AI"], link: "https://github.com/Samimt1/Advanced-AI-Resume-Analyzer-Job-Matcher" },
+  { title: "HabeshaGo — Smart Mobility", category: "Full Stack", visual: "mobile", symbol: "↗", description: "Smart mobility concept covering transport booking, EV charging, and digital parking services.", stack: ["React", "Node.js", "Prisma"], link: "https://github.com/sami855-ux/HabeshaGo" },
+  { title: "Green Pill LMS", category: "Full Stack", visual: "web", symbol: "◈", description: "Learning management platform for courses, student enrollment, and progress tracking.", stack: ["Next.js", "React", "PostgreSQL"], link: "https://t.me/GreenPill_LMS_bot" },
+  { title: "Diabetes Prediction Model", category: "AI & ML", visual: "ai", symbol: "◎", description: "Machine learning project exploring the prediction of diabetes using health-related features.", stack: ["Python", "Machine Learning"], link: "https://github.com/Samimt1/ML-Predecting-Diabetes" },
+  { title: "PySpark ETL Pipeline", category: "Data Engineering", visual: "data", symbol: "⌁", description: "ETL workflow for processing larger datasets with Apache Spark and data transformations.", stack: ["Python", "PySpark", "ETL"], link: "https://github.com/sami855-ux/pyspark-ETL" },
+  { title: "Crypto Spot Trading UI", category: "Frontend", visual: "web", symbol: "₿", description: "React-based trading exchange interface featuring market data and interactive trading views.", stack: ["React", "JavaScript", "CSS"], link: "https://github.com/Samimt1/Crypto-vs-React" },
+  { title: "Big Data ETL", category: "Data Engineering", visual: "data", symbol: "⌘", description: "Extract, transform, and load pipeline using Python and data processing tools.", stack: ["Python", "Pandas", "SQL"], link: "https://github.com/Samimt1/Big-data-" },
+  { title: "Travel List", category: "Frontend", visual: "mobile", symbol: "✈", description: "A lightweight interactive app for organizing trips and places to visit.", stack: ["React", "JavaScript"], link: "https://github.com/Samimt1/travel-list" }
 ];
-
-const contactConfig = {
-  YOUR_EMAIL: "esubalew.samiye@gmail.com",
-  YOUR_FONE: "+251960344062",
-  description: "Contact me ",
-  // creat an emailjs.com account
-  // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-  YOUR_SERVICE_ID: "service_id",
-  YOUR_TEMPLATE_ID: "template_id",
-  YOUR_USER_ID: "user_id",
-};
-
-const socialprofils = {
-  github: "https://github.com/Samimt1",
-  facebook: "https://web.facebook.com/michu.esubalew",
-  linkedin: "https://www.linkedin.com/in/biki-joker-538468334/",
-  twitter: "https://x.com/SamiSa30721",
-};
-export {
-  meta,
-  dataabout,
-  dataportfolio,
-  worktimeline,
-  skills,
-  services,
-  introdata,
-  contactConfig,
-  socialprofils,
-  logotext,
-};
+const contactConfig = { YOUR_EMAIL: "esubalew.samiye@gmail.com", YOUR_FONE: "+251960344062", description: "Contact me for opportunities and collaborations.", YOUR_SERVICE_ID: "service_id", YOUR_TEMPLATE_ID: "template_id", YOUR_USER_ID: "user_id" };
+const socialprofils = { github: "https://github.com/Samimt1", facebook: "https://web.facebook.com/michu.esubalew", linkedin: "https://www.linkedin.com/in/biki-joker-538468334/", twitter: "https://x.com/SamiSa30721" };
+export { logotext, meta, introdata, dataabout, worktimeline, skills, services, dataportfolio, contactConfig, socialprofils };
